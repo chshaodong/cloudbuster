@@ -1,0 +1,1494 @@
+Got module: /core/cloud/amazon/cloudformation
+Checking if module: cloudformation is already installed.
+Got module: /core/cloud/amazon/ec2
+Checking if module: ec2 is already installed.
+Got module: /core/cloud/amazon/ec2_ami
+Checking if module: ec2_ami is already installed.
+Got module: /core/cloud/amazon/ec2_ami_search
+Checking if module: ec2_ami_search is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/amazon/ec2_ami_search did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/amazon/ec2_asg
+Checking if module: ec2_asg is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_asg is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_eip
+Checking if module: ec2_eip is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_eip is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_elb
+Checking if module: ec2_elb is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_elb is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_elb_lb
+Checking if module: ec2_elb_lb is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_elb_lb is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_facts
+Checking if module: ec2_facts is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/amazon/ec2_facts did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/amazon/ec2_group
+Checking if module: ec2_group is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/amazon/ec2_group did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/amazon/ec2_key
+Checking if module: ec2_key is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_key is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_lc
+Checking if module: ec2_lc is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_lc is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_metric_alarm
+Checking if module: ec2_metric_alarm is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_metric_alarm is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_scaling_policy
+Checking if module: ec2_scaling_policy is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_scaling_policy is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_snapshot
+Checking if module: ec2_snapshot is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_snapshot is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_tag
+Checking if module: ec2_tag is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_tag is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_vol
+Checking if module: ec2_vol is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_vol is valid!
+Saved!
+Got module: /core/cloud/amazon/ec2_vpc
+Checking if module: ec2_vpc is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/ec2_vpc is valid!
+Saved!
+Got module: /core/cloud/amazon/elasticache
+Checking if module: elasticache is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/elasticache is valid!
+Saved!
+Got module: /core/cloud/amazon/rds
+Checking if module: rds is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/rds is valid!
+Saved!
+Got module: /core/cloud/amazon/rds_param_group
+Checking if module: rds_param_group is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/rds_param_group is valid!
+Saved!
+Got module: /core/cloud/amazon/rds_subnet_group
+Checking if module: rds_subnet_group is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/rds_subnet_group is valid!
+Saved!
+Got module: /core/cloud/amazon/route53
+Checking if module: route53 is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/route53 is valid!
+Saved!
+Got module: /core/cloud/amazon/s3
+Checking if module: s3 is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/amazon/s3 is valid!
+Saved!
+Got module: /core/cloud/azure/azure
+Checking if module: azure is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/azure/azure is valid!
+Saved!
+Got module: /core/cloud/digital_ocean/digital_ocean
+Checking if module: digital_ocean is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/digital_ocean/digital_ocean did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/digital_ocean/digital_ocean_domain
+Checking if module: digital_ocean_domain is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/digital_ocean/digital_ocean_domain did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/digital_ocean/digital_ocean_sshkey
+Checking if module: digital_ocean_sshkey is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/digital_ocean/digital_ocean_sshkey did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/docker/docker
+Checking if module: docker is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/docker/docker is valid!
+Saved!
+Got module: /core/cloud/google/gc_storage
+Checking if module: gc_storage is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/google/gc_storage is valid!
+Saved!
+Got module: /core/cloud/google/gce
+Checking if module: gce is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/google/gce is valid!
+Saved!
+Got module: /core/cloud/google/gce_lb
+Checking if module: gce_lb is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/google/gce_lb is valid!
+Saved!
+Got module: /core/cloud/google/gce_net
+Checking if module: gce_net is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/google/gce_net is valid!
+Saved!
+Got module: /core/cloud/google/gce_pd
+Checking if module: gce_pd is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/google/gce_pd is valid!
+Saved!
+Got module: /core/cloud/linode/linode
+Checking if module: linode is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/linode/linode is valid!
+Saved!
+Got module: /core/cloud/openstack/glance_image
+Checking if module: glance_image is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/glance_image did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/keystone_user
+Checking if module: keystone_user is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/openstack/keystone_user is valid!
+Saved!
+Got module: /core/cloud/openstack/nova_compute
+Checking if module: nova_compute is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/nova_compute did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/nova_keypair
+Checking if module: nova_keypair is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/nova_keypair did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/quantum_floating_ip
+Checking if module: quantum_floating_ip is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/quantum_floating_ip did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/quantum_floating_ip_associate
+Checking if module: quantum_floating_ip_associate is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/quantum_floating_ip_associate did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/quantum_network
+Checking if module: quantum_network is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/quantum_network did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/quantum_router
+Checking if module: quantum_router is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/quantum_router did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/quantum_router_gateway
+Checking if module: quantum_router_gateway is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/quantum_router_gateway did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/quantum_router_interface
+Checking if module: quantum_router_interface is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/quantum_router_interface did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/openstack/quantum_subnet
+Checking if module: quantum_subnet is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/cloud/openstack/quantum_subnet did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/cloud/rackspace/rax
+Checking if module: rax is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_cbs
+Checking if module: rax_cbs is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_cbs is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_cbs_attachments
+Checking if module: rax_cbs_attachments is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_cbs_attachments is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_cdb
+Checking if module: rax_cdb is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_cdb is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_cdb_database
+Checking if module: rax_cdb_database is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_cdb_database is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_cdb_user
+Checking if module: rax_cdb_user is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_cdb_user is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_clb
+Checking if module: rax_clb is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_clb is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_clb_nodes
+Checking if module: rax_clb_nodes is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_clb_nodes is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_dns
+Checking if module: rax_dns is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_dns is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_dns_record
+Checking if module: rax_dns_record is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_dns_record is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_facts
+Checking if module: rax_facts is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_facts is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_files
+Checking if module: rax_files is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_files is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_files_objects
+Checking if module: rax_files_objects is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_files_objects is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_identity
+Checking if module: rax_identity is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_identity is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_keypair
+Checking if module: rax_keypair is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_keypair is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_meta
+Checking if module: rax_meta is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_meta is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_network
+Checking if module: rax_network is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_network is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_queue
+Checking if module: rax_queue is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_queue is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_scaling_group
+Checking if module: rax_scaling_group is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_scaling_group is valid!
+Saved!
+Got module: /core/cloud/rackspace/rax_scaling_policy
+Checking if module: rax_scaling_policy is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/rackspace/rax_scaling_policy is valid!
+Saved!
+Got module: /core/cloud/vmware/vsphere_guest
+Checking if module: vsphere_guest is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/cloud/vmware/vsphere_guest is valid!
+Saved!
+Got module: /core/commands/command
+Checking if module: command is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/commands/command did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/commands/raw
+Checking if module: raw is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/commands/raw did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/commands/script
+Checking if module: script is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/commands/script did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/commands/shell
+Checking if module: shell is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/commands/shell did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/database/mysql/mysql_db
+Checking if module: mysql_db is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/database/mysql/mysql_db is valid!
+Saved!
+Got module: /core/database/mysql/mysql_user
+Checking if module: mysql_user is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/database/mysql/mysql_user is valid!
+Saved!
+Got module: /core/database/mysql/mysql_variables
+Checking if module: mysql_variables is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/database/mysql/mysql_variables did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/database/postgresql/postgresql_db
+Checking if module: postgresql_db is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/database/postgresql/postgresql_db is valid!
+Saved!
+Got module: /core/database/postgresql/postgresql_privs
+Checking if module: postgresql_privs is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/database/postgresql/postgresql_privs is valid!
+Saved!
+Got module: /core/database/postgresql/postgresql_user
+Checking if module: postgresql_user is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/database/postgresql/postgresql_user is valid!
+Saved!
+Got module: /core/files/acl
+Checking if module: acl is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/acl did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/assemble
+Checking if module: assemble is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/assemble did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/copy
+Checking if module: copy is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/copy did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/fetch
+Checking if module: fetch is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/fetch did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/file
+Checking if module: file is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/file did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/ini_file
+Checking if module: ini_file is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/files/ini_file is valid!
+Saved!
+Got module: /core/files/lineinfile
+Checking if module: lineinfile is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/lineinfile did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/replace
+Checking if module: replace is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/replace did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/stat
+Checking if module: stat is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/stat did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/synchronize
+Checking if module: synchronize is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/synchronize did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/template
+Checking if module: template is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/template did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/unarchive
+Checking if module: unarchive is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/unarchive did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/files/xattr
+Checking if module: xattr is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/files/xattr did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/inventory/add_host
+Checking if module: add_host is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/inventory/add_host did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/inventory/group_by
+Checking if module: group_by is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/inventory/group_by did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/network/basics/get_url
+Checking if module: get_url is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/network/basics/get_url is valid!
+Saved!
+Got module: /core/network/basics/slurp
+Checking if module: slurp is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/network/basics/slurp did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/network/basics/uri
+Checking if module: uri is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/network/basics/uri is valid!
+Saved!
+Got module: /core/packaging/language/easy_install
+Checking if module: easy_install is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/language/easy_install is valid!
+Saved!
+Got module: /core/packaging/language/gem
+Checking if module: gem is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/packaging/language/gem did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/packaging/language/pip
+Checking if module: pip is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/language/pip is valid!
+Saved!
+Got module: /core/packaging/os/apt
+Checking if module: apt is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/os/apt is valid!
+Saved!
+Got module: /core/packaging/os/apt_key
+Checking if module: apt_key is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/packaging/os/apt_key did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/packaging/os/apt_repository
+Checking if module: apt_repository is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/os/apt_repository is valid!
+Saved!
+Got module: /core/packaging/os/apt_rpm
+Checking if module: apt_rpm is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/packaging/os/apt_rpm did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/packaging/os/redhat_subscription
+Checking if module: redhat_subscription is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/os/redhat_subscription is valid!
+Saved!
+Got module: /core/packaging/os/rhn_channel
+Checking if module: rhn_channel is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/os/rhn_channel is valid!
+Saved!
+Got module: /core/packaging/os/rhn_register
+Checking if module: rhn_register is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/os/rhn_register is valid!
+Saved!
+Got module: /core/packaging/os/rpm_key
+Checking if module: rpm_key is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/packaging/os/rpm_key did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/packaging/os/yum
+Checking if module: yum is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/packaging/os/yum is valid!
+Saved!
+Got module: /core/source_control/git
+Checking if module: git is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/source_control/git did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/source_control/hg
+Checking if module: hg is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/source_control/hg did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/source_control/subversion
+Checking if module: subversion is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/source_control/subversion did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/authorized_key
+Checking if module: authorized_key is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/authorized_key did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/cron
+Checking if module: cron is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/system/cron is valid!
+Saved!
+Got module: /core/system/group
+Checking if module: group is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/system/group is valid!
+Saved!
+Got module: /core/system/hostname
+Checking if module: hostname is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/system/hostname is valid!
+Saved!
+Got module: /core/system/mount
+Checking if module: mount is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/mount did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/ping
+Checking if module: ping is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/ping did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>option_keys<ul class="errorlist"><li>This field is required.</li></ul></li><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>options<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/seboolean
+Checking if module: seboolean is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/seboolean did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/selinux
+Checking if module: selinux is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/system/selinux is valid!
+Saved!
+Got module: /core/system/service
+Checking if module: service is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/service did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/setup
+Checking if module: setup is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/setup did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/sysctl
+Checking if module: sysctl is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/sysctl did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/system/user
+Checking if module: user is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/system/user is valid!
+Saved!
+Got module: /core/utilities/helper/accelerate
+Checking if module: accelerate is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/utilities/helper/accelerate is valid!
+Saved!
+Got module: /core/utilities/helper/fireball
+Checking if module: fireball is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/utilities/helper/fireball is valid!
+Saved!
+Got module: /core/utilities/logic/assert
+Checking if module: assert is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/assert did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/utilities/logic/async_status
+Checking if module: async_status is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/async_status did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/utilities/logic/debug
+Checking if module: debug is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/debug did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/utilities/logic/fail
+Checking if module: fail is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/fail did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/utilities/logic/include_vars
+Checking if module: include_vars is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/include_vars did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/utilities/logic/pause
+Checking if module: pause is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/pause did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/utilities/logic/set_fact
+Checking if module: set_fact is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/set_fact did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/utilities/logic/wait_for
+Checking if module: wait_for is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/utilities/logic/wait_for did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/web_infrastructure/apache2_module
+Checking if module: apache2_module is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/web_infrastructure/apache2_module did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/web_infrastructure/django_manage
+Checking if module: django_manage is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/web_infrastructure/django_manage is valid!
+Saved!
+Got module: /core/web_infrastructure/htpasswd
+Checking if module: htpasswd is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/web_infrastructure/htpasswd did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/web_infrastructure/supervisorctl
+Checking if module: supervisorctl is already installed.
+Instantiating form.
+Checking form validity.
+Module: /core/web_infrastructure/supervisorctl is valid!
+Saved!
+Got module: /core/system/setup
+Checking if module: setup is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/system/setup did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/network/basics/slurp
+Checking if module: slurp is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/network/basics/slurp did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_feature
+Checking if module: win_feature is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_feature did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_feature
+Checking if module: win_feature is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_feature did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_get_url
+Checking if module: win_get_url is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_get_url did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_get_url
+Checking if module: win_get_url is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_get_url did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_group
+Checking if module: win_group is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_group did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_group
+Checking if module: win_group is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_group did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_msi
+Checking if module: win_msi is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_msi did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_msi
+Checking if module: win_msi is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_msi did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_ping
+Checking if module: win_ping is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_ping did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_ping
+Checking if module: win_ping is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_ping did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_service
+Checking if module: win_service is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_service did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_service
+Checking if module: win_service is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_service did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_stat
+Checking if module: win_stat is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_stat did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_stat
+Checking if module: win_stat is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_stat did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_user
+Checking if module: win_user is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_user did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /core/windows/win_user
+Checking if module: win_user is already installed.
+Instantiating form.
+Checking form validity.
+Module /core/windows/win_user did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/cloud/misc/ovirt
+Checking if module: ovirt is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/cloud/misc/ovirt is valid!
+Saved!
+Got module: /extras/cloud/misc/virt
+Checking if module: virt is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/cloud/misc/virt is valid!
+Saved!
+Got module: /extras/database/misc/mongodb_user
+Checking if module: mongodb_user is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/database/misc/mongodb_user is valid!
+Saved!
+Got module: /extras/database/misc/redis
+Checking if module: redis is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/database/misc/redis is valid!
+Saved!
+Got module: /extras/database/misc/riak
+Checking if module: riak is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/database/misc/riak did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/database/mysql/mysql_replication
+Checking if module: mysql_replication is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/database/mysql/mysql_replication did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/messaging/rabbitmq_parameter
+Checking if module: rabbitmq_parameter is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/messaging/rabbitmq_parameter did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/messaging/rabbitmq_plugin
+Checking if module: rabbitmq_plugin is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/messaging/rabbitmq_plugin did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/messaging/rabbitmq_policy
+Checking if module: rabbitmq_policy is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/messaging/rabbitmq_policy did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/messaging/rabbitmq_user
+Checking if module: rabbitmq_user is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/messaging/rabbitmq_user did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/messaging/rabbitmq_vhost
+Checking if module: rabbitmq_vhost is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/messaging/rabbitmq_vhost did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/monitoring/airbrake_deployment
+Checking if module: airbrake_deployment is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/airbrake_deployment is valid!
+Saved!
+Got module: /extras/monitoring/bigpanda
+Checking if module: bigpanda is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/bigpanda is valid!
+Saved!
+Got module: /extras/monitoring/boundary_meter
+Checking if module: boundary_meter is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/boundary_meter is valid!
+Saved!
+Got module: /extras/monitoring/datadog_event
+Checking if module: datadog_event is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/datadog_event is valid!
+Saved!
+Got module: /extras/monitoring/librato_annotation
+Checking if module: librato_annotation is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/librato_annotation is valid!
+Saved!
+Got module: /extras/monitoring/logentries
+Checking if module: logentries is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/monitoring/logentries did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/monitoring/monit
+Checking if module: monit is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/monitoring/monit did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/monitoring/nagios
+Checking if module: nagios is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/nagios is valid!
+Saved!
+Got module: /extras/monitoring/newrelic_deployment
+Checking if module: newrelic_deployment is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/newrelic_deployment is valid!
+Saved!
+Got module: /extras/monitoring/pagerduty
+Checking if module: pagerduty is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/pagerduty is valid!
+Saved!
+Got module: /extras/monitoring/pingdom
+Checking if module: pingdom is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/pingdom is valid!
+Saved!
+Got module: /extras/monitoring/rollbar_deployment
+Checking if module: rollbar_deployment is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/monitoring/rollbar_deployment did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/monitoring/stackdriver
+Checking if module: stackdriver is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/monitoring/stackdriver did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/monitoring/zabbix_maintenance
+Checking if module: zabbix_maintenance is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/monitoring/zabbix_maintenance is valid!
+Saved!
+Got module: /extras/network/dnsimple
+Checking if module: dnsimple is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/dnsimple is valid!
+Saved!
+Got module: /extras/network/dnsmadeeasy
+Checking if module: dnsmadeeasy is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/dnsmadeeasy is valid!
+Saved!
+Got module: /extras/network/lldp
+Checking if module: lldp is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/network/lldp did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>option_keys<ul class="errorlist"><li>This field is required.</li></ul></li><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>options<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/network/openvswitch_bridge
+Checking if module: openvswitch_bridge is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/openvswitch_bridge is valid!
+Saved!
+Got module: /extras/network/openvswitch_port
+Checking if module: openvswitch_port is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/openvswitch_port is valid!
+Saved!
+Got module: /extras/network/a10/a10_server
+Checking if module: a10_server is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/network/a10/a10_server did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/network/a10/a10_service_group
+Checking if module: a10_service_group is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/network/a10/a10_service_group did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/network/a10/a10_virtual_server
+Checking if module: a10_virtual_server is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/a10/a10_virtual_server is valid!
+Saved!
+Got module: /extras/network/citrix/netscaler
+Checking if module: netscaler is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/citrix/netscaler is valid!
+Saved!
+Got module: /extras/network/f5/bigip_facts
+Checking if module: bigip_facts is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/f5/bigip_facts is valid!
+Saved!
+Got module: /extras/network/f5/bigip_monitor_http
+Checking if module: bigip_monitor_http is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/f5/bigip_monitor_http is valid!
+Saved!
+Got module: /extras/network/f5/bigip_monitor_tcp
+Checking if module: bigip_monitor_tcp is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/f5/bigip_monitor_tcp is valid!
+Saved!
+Got module: /extras/network/f5/bigip_node
+Checking if module: bigip_node is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/f5/bigip_node is valid!
+Saved!
+Got module: /extras/network/f5/bigip_pool
+Checking if module: bigip_pool is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/f5/bigip_pool is valid!
+Saved!
+Got module: /extras/network/f5/bigip_pool_member
+Checking if module: bigip_pool_member is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/network/f5/bigip_pool_member is valid!
+Saved!
+Got module: /extras/notification/campfire
+Checking if module: campfire is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/campfire is valid!
+Saved!
+Got module: /extras/notification/flowdock
+Checking if module: flowdock is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/flowdock is valid!
+Saved!
+Got module: /extras/notification/grove
+Checking if module: grove is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/notification/grove did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/notification/hipchat
+Checking if module: hipchat is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/hipchat is valid!
+Saved!
+Got module: /extras/notification/irc
+Checking if module: irc is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/irc is valid!
+Saved!
+Got module: /extras/notification/jabber
+Checking if module: jabber is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/jabber is valid!
+Saved!
+Got module: /extras/notification/mail
+Checking if module: mail is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/notification/mail did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/notification/mqtt
+Checking if module: mqtt is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/mqtt is valid!
+Saved!
+Got module: /extras/notification/nexmo
+Checking if module: nexmo is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/notification/nexmo did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/notification/osx_say
+Checking if module: osx_say is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/osx_say is valid!
+Saved!
+Got module: /extras/notification/slack
+Checking if module: slack is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/notification/slack did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/notification/sns
+Checking if module: sns is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/sns is valid!
+Saved!
+Got module: /extras/notification/twilio
+Checking if module: twilio is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/twilio is valid!
+Saved!
+Got module: /extras/notification/typetalk
+Checking if module: typetalk is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/notification/typetalk is valid!
+Saved!
+Got module: /extras/packaging/language/composer
+Checking if module: composer is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/packaging/language/composer is valid!
+Saved!
+Got module: /extras/packaging/language/cpanm
+Checking if module: cpanm is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/language/cpanm did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/language/npm
+Checking if module: npm is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/language/npm did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/homebrew
+Checking if module: homebrew is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/homebrew did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/homebrew_cask
+Checking if module: homebrew_cask is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/homebrew_cask did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/homebrew_tap
+Checking if module: homebrew_tap is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/packaging/os/homebrew_tap is valid!
+Saved!
+Got module: /extras/packaging/os/layman
+Checking if module: layman is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/layman did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/macports
+Checking if module: macports is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/macports did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/openbsd_pkg
+Checking if module: openbsd_pkg is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/openbsd_pkg did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/opkg
+Checking if module: opkg is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/opkg did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/pacman
+Checking if module: pacman is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/pacman did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/pkgin
+Checking if module: pkgin is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/pkgin did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/pkgng
+Checking if module: pkgng is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/pkgng did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/pkgutil
+Checking if module: pkgutil is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/pkgutil did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/portage
+Checking if module: portage is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/packaging/os/portage is valid!
+Saved!
+Got module: /extras/packaging/os/portinstall
+Checking if module: portinstall is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/portinstall did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/svr4pkg
+Checking if module: svr4pkg is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/svr4pkg did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/swdepot
+Checking if module: swdepot is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/swdepot did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/urpmi
+Checking if module: urpmi is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/packaging/os/urpmi did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/packaging/os/zypper
+Checking if module: zypper is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/packaging/os/zypper is valid!
+Saved!
+Got module: /extras/packaging/os/zypper_repository
+Checking if module: zypper_repository is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/packaging/os/zypper_repository is valid!
+Saved!
+Got module: /extras/source_control/bzr
+Checking if module: bzr is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/source_control/bzr did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/source_control/github_hooks
+Checking if module: github_hooks is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/source_control/github_hooks did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/alternatives
+Checking if module: alternatives is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/alternatives did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/at
+Checking if module: at is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/system/at is valid!
+Saved!
+Got module: /extras/system/capabilities
+Checking if module: capabilities is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/capabilities did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/debconf
+Checking if module: debconf is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/system/debconf is valid!
+Saved!
+Got module: /extras/system/facter
+Checking if module: facter is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/facter did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>option_keys<ul class="errorlist"><li>This field is required.</li></ul></li><li>options<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/filesystem
+Checking if module: filesystem is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/filesystem did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/firewalld
+Checking if module: firewalld is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/system/firewalld is valid!
+Saved!
+Got module: /extras/system/getent
+Checking if module: getent is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/getent did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/kernel_blacklist
+Checking if module: kernel_blacklist is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/kernel_blacklist did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/locale_gen
+Checking if module: locale_gen is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/locale_gen did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li><li>author<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/lvg
+Checking if module: lvg is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/lvg did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/lvol
+Checking if module: lvol is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/lvol did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/modprobe
+Checking if module: modprobe is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/modprobe did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/ohai
+Checking if module: ohai is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/ohai did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>option_keys<ul class="errorlist"><li>This field is required.</li></ul></li><li>options<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/system/open_iscsi
+Checking if module: open_iscsi is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/system/open_iscsi is valid!
+Saved!
+Got module: /extras/system/ufw
+Checking if module: ufw is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/system/ufw is valid!
+Saved!
+Got module: /extras/system/zfs
+Checking if module: zfs is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/system/zfs did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/web_infrastructure/ejabberd_user
+Checking if module: ejabberd_user is already installed.
+Instantiating form.
+Checking form validity.
+Module: /extras/web_infrastructure/ejabberd_user is valid!
+Saved!
+Got module: /extras/web_infrastructure/jboss
+Checking if module: jboss is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/web_infrastructure/jboss did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Got module: /extras/web_infrastructure/jira
+Checking if module: jira is already installed.
+Instantiating form.
+Checking form validity.
+Module /extras/web_infrastructure/jira did not load. Form was invalid!
+ERROR: <ul class="errorlist"><li>requirements<ul class="errorlist"><li>This field is required.</li></ul></li></ul>

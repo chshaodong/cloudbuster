@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 
+# Vim
+*.swp
+
 # C extensions
 *.so
 
@@ -46,6 +49,7 @@ coverage.xml
 
 # Django stuff:
 *.log
+*.db
 
 # Sphinx documentation
 docs/_build/
