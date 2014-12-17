@@ -17,15 +17,14 @@ class Command(BaseCommand):
 
         def installed(module_path):
             for installed_module in installed_modules:
-                installed_module_path = "%s/%s" % (installed_module['module_path'], installed_module['module'])
-                if module_path == installed_module_path:
+                if module_path == installed_module['module_path']: 
                     return True
                 else:
                     continue
             return False
 
         for imported_module in imported_modules:
-            full_module_path = "%s/%s" % (imported_module['module_path'], imported_module['module'])
+            full_module_path = imported_module['module_path']
             print "Got module: %s" % full_module_path
             print "Checking if module: %s is already installed." % imported_module['module']
             if installed(full_module_path):

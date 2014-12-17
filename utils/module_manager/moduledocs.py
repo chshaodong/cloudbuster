@@ -48,7 +48,7 @@ def get_module_doc(module):
         all_keys = sorted(all_keys)
         doc['option_keys'] = all_keys
         doc['filename'] = filename
-        doc['module_path'] = '%s' % os.path.split(re.sub('^%s' % PACKAGE_PATH, '', filename))[0] 
+        doc['module_path'] = '%s/%s' % (os.path.split(re.sub('^%s' % PACKAGE_PATH, '', filename))[0], doc['module']) 
         doc['docuri'] = doc['module'].replace('_', '-')
     else:
         sys.stderr.write("ERROR: module %s missing documentation (or could not parse documentation)\n" % module)
