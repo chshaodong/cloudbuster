@@ -16,6 +16,12 @@ MODULEDIR = C.DEFAULT_MODULE_PATH
 BLACKLIST_EXTS = ('.pyc', '.swp', '.bak', '~', '.rpm')
 IGNORE_FILES = [ "COPYING", "CONTRIBUTING", "LICENSE", "README", "async_wrapper.py" ]
 
+_ITALIC = re.compile(r"I\(([^)]+)\)")
+_BOLD   = re.compile(r"B\(([^)]+)\)")
+_MODULE = re.compile(r"M\(([^)]+)\)")
+_URL    = re.compile(r"U\(([^)]+)\)")
+_CONST  = re.compile(r"C\(([^)]+)\)")
+
 # Here, we're using ansible.modules, but we could use this for any python package by overriding this.
 package = 'ansible.modules'
 
@@ -23,6 +29,33 @@ package = 'ansible.modules'
 m = __import__(package)
 parts = package.split('.')[1:]
 PACKAGE_PATH = os.path.join(os.path.dirname(m.__file__), *parts)
+
+def strip_doc_formatting(text):
+
+    t = _ITALIC.sub(r"\1", text)    # I(word) => `word'
+    t = _BOLD.sub(r"\1", t)         # B(word) => *word*
+    t = _MODULE.sub(r"\1", t)       # M(word) => [word]
+    t = _URL.sub(r"\1", t)          # U(word) => word
+    t = _CONST.sub(r"\1", t)        # C(word) => `word'
+
+    return t
+
+def unformat_dict(dictionary):
+    result = {}
+    for k, v in dictionary.iteritems():
+        if isinstance(v, basestring):
+            result[k] = strip_doc_formatting(v)
+            continue
+        elif isinstance(v, list):
+            for x in v:
+                result[k] = unformat_dict(v)
+            continue
+        elif isinstance(v, dict):
+            result[k] = unformat_dict(v)
+            continue
+        else:
+            continue
+    return result
 
 
 def get_module_doc(module):
@@ -41,11 +74,13 @@ def get_module_doc(module):
         sys.stderr.write("ERROR: module %s has a documentation error formatting or is missing documentation\n" % module)
         pass
     if doc is not None:
-
         all_keys = []
         for (k,v) in doc['options'].iteritems():
             all_keys.append(k)
         all_keys = sorted(all_keys)
+#        doc['options'] = anyjson.serialize(unformat_dict(doc['options'])) # unformat is failing. 
+        doc['options'] = anyjson.serialize(doc['options']
+        doc['description'] = strip_doc_formatting('\n'.join(doc['description']))
         doc['option_keys'] = all_keys
         doc['filename'] = filename
         doc['module_path'] = '%s/%s' % (os.path.split(re.sub('^%s' % PACKAGE_PATH, '', filename))[0], doc['module']) 

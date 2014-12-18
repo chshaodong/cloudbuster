@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+{% for module in ansible_modules %}
+<div class="panel">
+    <div class="panel-body"><b>{{ module.module }}</b> - {{ module.short_description }}</div>
+    <div><b>Description:</b> {{ module.description }}</div>
+    <div><b>Options:</b>{{ module.options }}</div>
+    <div>New in version {{ module.version_added }}</div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

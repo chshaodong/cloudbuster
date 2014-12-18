@@ -1,0 +1,16 @@
+Django==1.7.1
+Jinja2==2.7.3
+MarkupSafe==0.23
+PyYAML==3.11
+amqp==1.4.6
+ansible==1.8.2
+anyjson==0.3.3
+billiard==3.3.0.19
+celery==3.1.17
+django-jsonfield==0.9.13
+ecdsa==0.11
+kombu==3.0.24
+paramiko==1.15.1
+pyaml==14.12.10
+pycrypto==2.6.1
+pytz==2014.10
