@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from utils.module_manager import moduledocs
 from ansible_modules.models import AnsibleModule
-from ansible_modules.forms import AnsibleModuleForm
+from ansible_modules.forms import AnsibleModuleForm, AnsibleModuleOptionForm
 from django.forms.models import model_to_dict
 
 class Command(BaseCommand):
@@ -36,7 +36,14 @@ class Command(BaseCommand):
                 print "Checking form validity."
                 if form.is_valid():
                     print "Module: %s is valid!" % full_module_path
-                    form.save()
+                    module_instance = form.save()
+                    print "saved module"
+                    print "importing module's options"
+                    for option in imported_module['options']:
+                        option['module'] = module_instance.id
+                        option_form = AnsibleModuleOptionForm(option)
+                        if option_form.is_valid():
+                            option_form.save()
                     print "Saved!"
                 else:
                     print "Module %s did not load. Form was invalid!" % full_module_path

@@ -10,19 +10,21 @@
 
     {% block title %}<title>Cloudbuster Home</title>{% endblock %}
 
-    <link href="{{ STATIC_URL }}css/foundation/foundation.min.css" rel="stylesheet">
+      <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 
 {% endblock %}
   </head>
   <body>
-      <div class="row">      
+    <div class="container">
+     <div class="row">      
         {% block content %}
         {% endblock %}
      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}botstrap/js/bootstrap.min.js"></script>
 
-
-
-    <script src="{{ STATIC_URL }}js/foundation/foundation.js"></script>
-    <script>$(document).foundation();</script>
   </body>
 </html>

@@ -1,13 +1,33 @@
 {% extends 'base.html' %}
 {% block content %}
-<div>
+<div class=".col-md-6 ">
 {% for module in ansible_modules %}
-<div class="panel">
-    <div class="panel-body"><b>{{ module.module }}</b> - {{ module.short_description }}</div>
-    <div><b>Description:</b> {{ module.description }}</div>
-    <div><b>Options:</b>{{ module.options }}</div>
-    <div>New in version {{ module.version_added }}</div>
-</div>
+    <div class="panel panel-primary">
+        <div class="panel-heading"><b>{{ module.module }}</b> - {{ module.short_description }}</div>
+        <div class="panel-body">
+          <div class="panel">
+              <div class="panel-title"><b>Description</b></div>
+              <div class="panel-body"><p>{{ module.description }}</p></div>
+         </div>
+            <div><b>Options</b></div>
+            <div class="table-responsive">
+                <table role="grid" class="table table-bordered table-striped ">
+                    <thead>  
+                        <tr><th>Name</th><th>Default</th><th>Required</th><th>Description</th><th>Choices</th><th>Aliases</th></tr>
+                    </thead>
+                    <tbody>
+                        {% for option in module.options.all %}
+                        <tr>
+                            <td>{{ option.name }}</td><td>{{ option.default }}</td><td>{{ option.required  }}</td>
+                            <td><p>{{ option.description }}</p></td><td>{{ option.choices }}</td><td>{{ options.aliases }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="panel-footer"><p><b>New in version</b> {{ module.version_added }}</p></div>
+    </div>
 {% endfor %}
 </div>
 {% endblock %}

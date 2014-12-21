@@ -40,22 +40,19 @@ def strip_doc_formatting(text):
 
     return t
 
-def unformat_dict(dictionary):
-    result = {}
-    for k, v in dictionary.iteritems():
-        if isinstance(v, basestring):
-            result[k] = strip_doc_formatting(v)
-            continue
-        elif isinstance(v, list):
-            for x in v:
-                result[k] = unformat_dict(v)
-            continue
-        elif isinstance(v, dict):
-            result[k] = unformat_dict(v)
-            continue
-        else:
-            continue
-    return result
+def unformat(value):
+    if isinstance(value, basestring):
+        return strip_doc_formatting(value)
+    elif isinstance(value, list):
+        newlist = []
+        for x in value:
+            newlist.append(unformat(x))
+        return newlist
+    elif isinstance(value,dict):     
+        newdict = {}
+        for k, v in value.iteritems():
+            newdict[k] = unformat(v)
+        return newdict
 
 
 def get_module_doc(module):
@@ -75,19 +72,32 @@ def get_module_doc(module):
         pass
     if doc is not None:
         all_keys = []
+        options = []
         for (k,v) in doc['options'].iteritems():
             all_keys.append(k)
-        all_keys = sorted(all_keys)
-#        doc['options'] = anyjson.serialize(unformat_dict(doc['options'])) # unformat is failing. 
-        doc['options'] = anyjson.serialize(doc['options']
-        doc['description'] = strip_doc_formatting('\n'.join(doc['description']))
+            option = {'name':k} 
+            for key, value in v.iteritems():
+                if key == 'description':
+                    value = ''.join(value)
+                if key == 'required':
+                    if value == True:
+                        value = 'yes'
+                    else:
+                        value = 'no'
+                params = {key: value}
+                option.update(params)
+            if 'required' not in option.keys():
+                option['required'] = 'no'
+            options.append(option)
+        doc['options'] = options
+        doc['description'] = str('\n'.join(doc['description']))
         doc['option_keys'] = all_keys
         doc['filename'] = filename
         doc['module_path'] = '%s/%s' % (os.path.split(re.sub('^%s' % PACKAGE_PATH, '', filename))[0], doc['module']) 
         doc['docuri'] = doc['module'].replace('_', '-')
     else:
         sys.stderr.write("ERROR: module %s missing documentation (or could not parse documentation)\n" % module)
-    return doc
+    return unformat(doc)
 
 
 def filter_modules(files_list):
