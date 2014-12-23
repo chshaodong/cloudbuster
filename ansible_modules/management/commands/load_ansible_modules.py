@@ -25,26 +25,17 @@ class Command(BaseCommand):
 
         for imported_module in imported_modules:
             full_module_path = imported_module['module_path']
-            print "Got module: %s" % full_module_path
-            print "Checking if module: %s is already installed." % imported_module['module']
             if installed(full_module_path):
-                print "Yes."
                 continue
             else:
-                print "Instantiating form."
                 form = AnsibleModuleForm(imported_module)
-                print "Checking form validity."
                 if form.is_valid():
-                    print "Module: %s is valid!" % full_module_path
                     module_instance = form.save()
-                    print "saved module"
-                    print "importing module's options"
                     for option in imported_module['options']:
                         option['module'] = module_instance.id
                         option_form = AnsibleModuleOptionForm(option)
                         if option_form.is_valid():
                             option_form.save()
-                    print "Saved!"
                 else:
                     print "Module %s did not load. Form was invalid!" % full_module_path
                     print "ERROR: %s" % form.errors
