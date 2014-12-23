@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand, CommandError
-from utils.module_manager import moduledocs
+from ansible_modules.utils.module_manager import moduledocs
 from ansible_modules.models import AnsibleModule
 from ansible_modules.forms import AnsibleModuleForm, AnsibleModuleOptionForm
 from django.forms.models import model_to_dict

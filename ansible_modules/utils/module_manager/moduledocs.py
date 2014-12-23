@@ -13,7 +13,7 @@ from collections import defaultdict
 
 MODULEDIR = C.DEFAULT_MODULE_PATH
 
-BLACKLIST_EXTS = ('.pyc', '.swp', '.bak', '~', '.rpm')
+BLACKLIST_EXTS = ('.pyc', '.swp', '.bak', '~', '.rpm', '.ps1')
 IGNORE_FILES = [ "COPYING", "CONTRIBUTING", "LICENSE", "README", "async_wrapper.py" ]
 
 _ITALIC = re.compile(r"I\(([^)]+)\)")
@@ -105,20 +105,20 @@ def filter_modules(files_list):
     Takes a list of files and returns a list of python modules (python files) with the extension removed.
     '''
     module_list = []
-    for module in files_list:
-        if module.startswith('.'):
+    for module in list(set(files_list)):
+        basename = os.path.basename(module)
+        if basename.startswith('.'):
             continue
-        elif any(module.endswith(x) for x in BLACKLIST_EXTS):
+        elif any(basename.endswith(x) for x in BLACKLIST_EXTS):
             continue
-        elif module.startswith('__'):
+        elif basename.startswith('__'):
             continue
-        elif module in IGNORE_FILES:
+        elif basename in IGNORE_FILES:
             continue
-        elif module.startswith('_'):
+        elif basename.startswith('_'):
             continue
-        module = os.path.splitext(module)[0] # removes the extension
         module_list.append(module)
-    return module_list
+    return list(set(module_list))
 
 def get_all_module_docs():
     '''
@@ -127,9 +127,12 @@ def get_all_module_docs():
     results = []
     for root, dirs, files in os.walk(PACKAGE_PATH):
         if len(files) > 0:
-            modules = filter_modules(files)
+            full_paths = []
+            for file in files:
+                full_paths.append(os.path.join(root, file))
+            modules = filter_modules(full_paths)
             if len(modules) > 0:
-               for module in modules:
+               for module in list(set(modules)):
                    results.append(get_module_doc(module))
     return results
 
