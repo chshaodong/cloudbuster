@@ -8,11 +8,15 @@ A Django app for managing ansible. Jobs are to be queued in AMQP broker, and exe
 So far, only module import and viewing a module list in a browser is working. 
 
 Checkout to a virtualenv
-pip install -r requirements.pip
+`pip install -r requirements.pip'
 
-./manage.py syncdb --noinput
-./manage.py load_ansible_modules
-./manage.py build_module_categories
-./manage.py runserver
+Run tests:
+`./manage.py test'
+
+Setup for development
+`./manage.py syncdb --noinput'
+`./manage.py load_ansible_modules'
+`./manage.py build_module_categories'
+`./manage.py runserver'
 
 Point your browser to http://localhost:8000/ansible/modules/
