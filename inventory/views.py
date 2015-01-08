@@ -13,6 +13,7 @@ class InventoryDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(InventoryDetailView, self).get_context_data(**kwargs)
         context['hostgroups'] = context['inventory'].get_groups()
+        context['inventories'] = Inventory.objects.all()
         return context
 
    
