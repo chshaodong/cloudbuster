@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block title %}<title>Cloudbuster Home</title>{% endblock %}
+
+      <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="{{ STATIC_URL }}ansible_modules/css/ansible_modules.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" class="cssdeck">
+
+{% endblock %}
+  </head>
+  <body>
+    <div class="container-fluid">
+     <div class="row-fluid">      
+        {% block content %}
+        {% endblock %}
+     </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                $('label.tree-toggler').click(function () {
+                        $(this).parent().children('ul.tree').toggle(300);
+
+                });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-sm-3 well">
+        <div style="overflow-y: scroll; overflow-x: hidden; height: 100vh">
+            {% include 'inventory/inventory_list.html' %}
+        </div>
+</div>
+<div class="col-sm-9" style="overflow-y: scroll; overflow-x: hidden; height: 100vh">
+{% for hostgroup in hostgroups %}
+    <div class="panel panel-primary">
+        <div class="panel-heading"><b>{{ hostgroup.name }}</b></div>
+        <div class="panel-body">
+          <div class="panel">
+              <div class="panel-title"><b>Vars</b></div>
+              <div class="panel-body">
+                  {% for key, value in hostgroup.get_variables %}
+                  <p>{{ key }} = {{ value }}</p>
+                  {% endfor %}
+              </div>
+          </div>
+          <div class="panel">
+              <div class="panel-title"><b>Hosts</b></div>
+              <div class="panel-body">
+                  {% for host in hostgroup.get_hosts %}
+                  <p>{{ host.name }}</p>
+                  {% endfor %}
+              </div>
+          </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

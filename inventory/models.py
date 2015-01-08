@@ -13,7 +13,7 @@ class Inventory(models.Model):
         return self.hosts.all()
 
     def get_groups(self):
-        return self.groups.all()
+        return self.host_groups.all()
 
     def add_group(self, name):
         return HostGroup.objects.create(inventory=self, name=name)

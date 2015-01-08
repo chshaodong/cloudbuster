@@ -17,7 +17,7 @@ $ ./manage.py test
 ```
 Setup for development:
 ```
-$ ./manage.py syncdb --noinput
+$ ./manage.py migrate
 $ ./manage.py load_ansible_modules
 $ ./manage.py build_module_categories
 $ ./manage.py runserver

@@ -1,3 +1,7 @@
 from django.contrib import admin
+from inventory.models import Inventory, HostGroup, Host
 
-# Register your models here.
+admin.site.register(Inventory)
+admin.site.register(HostGroup)
+admin.site.register(Host)
+
