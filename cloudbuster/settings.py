@@ -39,6 +39,8 @@ INSTALLED_APPS = (
     'ansible_modules',
     'mptt',
     'inventory',
+    'ansible_tasks',
+    'playbooks'
 )
 
 MIDDLEWARE_CLASSES = (

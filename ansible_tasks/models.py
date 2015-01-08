@@ -5,7 +5,7 @@ class Task(models.Model):
     name = models.CharField(max_length=40)
     module = models.ForeignKey(AnsibleModule, null=True, blank=True)
     module_args = models.TextField(blank=True, null=True)
-    notify = models.ManyToMany('self', null=True, blank=True)
+    notify = models.ManyToManyField('self', null=True, blank=True)
     # tags = not yet implemented
     register = models.TextField(blank=True, null=True)
     local_action = models.BooleanField(default=False) 

@@ -5,7 +5,7 @@ from inventory.models import Inventory
 class Play(models.Model):
     name = models.CharField(max_length=140)
     hosts = models.TextField(null=True, blank=True)
-    tasks = models.ManyToMany(Task, related_name='in_plays', through='TaskList')
+    tasks = models.ManyToManyField(Task, related_name='in_plays', through='TaskList')
     remote_user = models.CharField(max_length=40, blank=True, null=True)
     sudo = models.BooleanField(default=False)
     sudo_user = models.CharField(max_length=40, blank=True, null=True)
@@ -24,12 +24,12 @@ class TaskList(models.Model):
 class Playbook(models.Model):
     """A collection of Plays"""
     name = models.CharField(max_length=140)
-    plays = models.ManyToMany(Play, related_name='in_playbook', through='PlayList')
+    plays = models.ManyToManyField(Play, related_name='in_playbook', through='PlayList')
 
 
-class PlayList(models.Model)
+class PlayList(models.Model):
    number = models.PositiveIntegerField()
    playbook = models.ForeignKey(Playbook)
-   play = models.ForeignKey(Playbook) 
+   play = models.ForeignKey(Play) 
 
    
