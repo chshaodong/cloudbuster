@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ansible_modules',
+    'mptt',
+    'inventory',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -12,19 +12,28 @@
 
       <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="{{ STATIC_URL }}ansible_modules/css/ansible_modules.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" class="cssdeck">
 
 {% endblock %}
   </head>
   <body>
-    <div class="container">
-     <div class="row">      
+    <div class="container-fluid">
+     <div class="row-fluid">      
         {% block content %}
         {% endblock %}
      </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="{{ STATIC_URL }}botstrap/js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                $('label.tree-toggler').click(function () {
+                        $(this).parent().children('ul.tree').toggle(300);
 
+                });
+        });
+    </script>
   </body>
 </html>

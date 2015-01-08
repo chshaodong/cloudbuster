@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class=".col-md-6 ">
+<div class="col-sm-3 well">
+        <div style="overflow-y: scroll; overflow-x: hidden; height: 100vh">
+            {% include 'ansible_modules/categories.html' %}
+        </div>
+</div>
+<div class="col-sm-9" style="overflow-y: scroll; overflow-x: hidden; height: 100vh">
 {% for module in ansible_modules %}
     <div class="panel panel-primary">
         <div class="panel-heading"><b>{{ module.module }}</b> - {{ module.short_description }}</div>

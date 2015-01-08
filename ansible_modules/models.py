@@ -2,9 +2,10 @@ from django.db import models
 from django.template.defaultfilters import slugify
 from django.utils.translation import ugettext_lazy as _
 from ansible_modules.managers import ModuleCategoryManager
+from mptt.models import MPTTModel, TreeForeignKey
 
-class ModuleCategory(models.Model):
-    parent = models.ForeignKey('self', null=True, related_name='subcategories')
+class ModuleCategory(MPTTModel):
+    parent = TreeForeignKey('self', null=True, related_name='subcategories')
     name = models.CharField(_(u'name'), max_length=40)
     slug = models.TextField(max_length=255, blank=True)
 
@@ -20,7 +21,8 @@ class ModuleCategory(models.Model):
         for attr, value in self.__dict__.iteritems():
             yield attr, values
 
-
+    def __str__(self):
+        return "%s" % self.slug
 
 
 class AnsibleModule(models.Model):
@@ -41,6 +43,9 @@ class AnsibleModule(models.Model):
     def get_fields(self):
         for attr, value in self.__dict__.iteritems():
             yield attr, value  
+
+    def __str__(self):
+        return "%s - %s" % (self.module, self.module_path)
 
 class AnsibleModuleOption(models.Model):
     module = models.ForeignKey(AnsibleModule, related_name='options')

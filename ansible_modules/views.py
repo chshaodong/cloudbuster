@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
+from django.template import RequestContext
 from django.views.generic import ListView
-from ansible_modules.models import AnsibleModule
+from ansible_modules.models import AnsibleModule, ModuleCategory
 import anyjson
 
 
@@ -13,4 +14,14 @@ class AnsibleModuleListView(ListView):
         if module_path is not None:
             self.queryset = AnsibleModule.objects.filter(module_path__contains=module_path)
         return super(AnsibleModuleListView, self).get(request)
+    def get_context_data(self, **kwargs):
+        context = super(AnsibleModuleListView, self).get_context_data(**kwargs)
+        context['nodes'] = ModuleCategory.objects.all()
+        return context
 
+def show_categories(request):
+    return render_to_response("ansible_modules/categories.html", 
+                                {'nodes': ModuleCategory.objects.all()},
+                                context_instance=RequestContext(request))
+
+                    
