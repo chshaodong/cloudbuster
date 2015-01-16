@@ -1,44 +1,93 @@
+from django.core.urlresolvers import reverse
+from rest_framework import status
+from rest_framework.test import APITestCase
 from django.test import TestCase
-from inventory.models import Inventory, HostGroup, Host
 
-class TestCloudBusterInventory(TestCase):
+from inventory.models import (
+    Inventory,
+    InventoryVar,
+    HostGroup,
+    HostGroupVar,
+    Host,
+    HostVar
+)
 
-    def test_host_vars(self):
-        inventory = Inventory.objects.create(name='default')
-        host = Host.objects.create(inventory=inventory, name='192.168.33.10')
+class TestCloudBusterInventoryAPI(APITestCase):
 
-        vars = {'a': True, 'b': False, 'foo': 'bar'}
-        for k, v in vars.iteritems():
-            host.set_variable(k, v)
-        
-        host_vars = host.get_variables()
-        self.assertTrue(host_vars == vars)
+    def __init__(self, *args, **kwargs):
+        super(TestCloudBusterInventoryAPI, self).__init__(*args, **kwargs)
+        self.maxDiff = None
 
-    def test_hostgroup_vars(self):
-        inventory = Inventory.objects.create(name='default')
-        hostgroup = HostGroup.objects.create(inventory=inventory, name='test')
-    
-        vars = {'a': True, 'b': False, 'foo': 'bar'}
-        for k, v in vars.iteritems():
-            hostgroup.set_variable(k, v)
+    def test_00create_inventory(self):
+        data = {
+            "name": "dev",
+            "vars": [],
+            "host_groups": []
+        }
+        url = r'/api/inventories/'
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(dict(response.data), data)
 
-        hostgroup_vars = hostgroup.get_variables()
-        self.assertTrue(hostgroup_vars == vars)
+    def test_01create_inventory_with_vars(self):
+        data = {
+            "name": "dev",
+            "vars": [{"inventory_test_var": "test_value"}],
+            "host_groups": []
+        }       
+        url = r'/api/inventories/'
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(dict(response.data), data)
 
-    def test_hostgroup_add_get_hosts(self):
-        inventory = Inventory.objects.create(name='default')
-        webservers = HostGroup.objects.create(inventory=inventory, name='webservers')
-        webserver0 = Host.objects.create(inventory=inventory, name='www0.example.com')
-        
-        webservers.add_host(webserver0)
-        self.assertTrue(webservers.get_hosts()[0].name == webserver0.name)
-        
-    def test_hostgroup_add_get_child_groups(self):
-        inventory = Inventory.objects.create(name='default')
-        parent = HostGroup.objects.create(inventory=inventory, name='webservers')
-        child = HostGroup.objects.create(inventory=inventory, name='webservers_children')
+    def test_02create_inventory_with_hostgroups_and_hostgroup_vars(self):
+        data = {
+            "name": "dev",
+            "vars": [{"inventory_test_var": "test_value"}],
+            "host_groups": [{
+                "name": "webservers", 
+                "vars": [{
+                        "host_group_test_var": "Host_group_test_value"
+                        }], 
+                "hosts": []
+            }] 
+        }       
+        url = r'/api/inventories/'
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(dict(response.data), data)
 
-        parent.add_child_group(child)
-        self.assertTrue(parent.children.all()[0].name == child.name)
-
-
+    def test_03create_inventory_with_hostgroups_and_hostgroup_vars_and_hosts(self):
+        data = {
+    "name": "Prod", 
+    "vars": [
+        {
+            "test": "test_data"
+        }, 
+        {
+            "test1": "test_data1"
+        }
+    ], 
+    "host_groups": [
+        {
+            "name": "webservers", 
+            "vars": [
+                {
+                    "test": "testing"
+                }
+            ], 
+            "hosts": [
+                {
+                    "name": "www0.example.com", 
+                    "vars": [], 
+                }, 
+                {
+                    "name": "www1.example.com", 
+                    "vars": [], 
+                }]
+        }]
+    }
+        url = r'/api/inventories/'
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(dict(response.data), data)
