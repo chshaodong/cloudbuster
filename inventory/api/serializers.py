@@ -82,27 +82,29 @@ class InventorySerializer(serializers.ModelSerializer):
         required_fields = ('name',)
 
     def create(self, validated_data):
-        vars_data = validated_data.pop('vars')
-        host_group_data = validated_data.pop('host_groups')
+        vars_data = validated_data.pop('vars', [])
+        host_group_data = validated_data.pop('host_groups', [])
         inventory = Inventory.objects.create(**validated_data)
         for var in vars_data: 
             if var is not None:
                 inventory.add_var(**var)
         for host_group in host_group_data:
-            host_group_vars = host_group.pop('vars')
-            hosts = host_group.pop('hosts')
-            hostgroup = inventory.add_host_group(**host_group)
-            for var in host_group_vars: 
-                if var is not None:
-                    hostgroup.add_var(**var)
-            for host_data in hosts:
-                vars = host_data.pop('vars')
-                host = hostgroup.add_host(**host_data)
-                for var in vars: 
+            if host_group is not None:
+                host_group_vars = host_group.pop('vars', [])
+                hosts = host_group.pop('hosts', [])
+                hostgroup = inventory.add_host_group(**host_group)
+                for var in host_group_vars: 
                     if var is not None:
-                        host.add_var(**var)
-                host.save()
-            hostgroup.save()
+                        hostgroup.add_var(**var)
+                for host_data in hosts:
+                    if host_data is not None:
+                        vars = host_data.pop('vars',[])
+                        host = hostgroup.add_host(**host_data)
+                        for var in vars: 
+                            if var is not None:
+                                host.add_var(**var)
+                        host.save()
+                hostgroup.save()
         inventory.save()
         return inventory
 
