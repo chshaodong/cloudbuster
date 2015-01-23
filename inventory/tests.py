@@ -2,7 +2,6 @@ from django.core.urlresolvers import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
 from django.test import TestCase
-import anyjson
 
 from inventory.models import (
     Inventory,
@@ -59,7 +58,6 @@ class TestCloudBusterInventoryAPI(APITestCase):
         self.assertEqual(dict(response.data), data)
 
     def test_03create_inventory_with_hostgroups_and_hostgroup_vars_and_hosts(self):
-        from collections import OrderedDict
         data = { "name": "Prod", 
     "vars": [
         {
@@ -86,7 +84,7 @@ class TestCloudBusterInventoryAPI(APITestCase):
                 {
                     "name": "www1.example.com", 
                     "vars": [],
-                    "port": None
+                    "port": 2222
                 }]
         }]
     }
