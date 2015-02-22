@@ -2,6 +2,8 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from mptt.models import MPTTModel, TreeForeignKey
 from ansible import utils
+from inventory.managers import InventoryVarManager
+
 
 class BaseVar(models.Model):
     key = models.CharField(max_length=255)
@@ -10,10 +12,10 @@ class BaseVar(models.Model):
         abstract = True
 
 class Inventory(models.Model):
-    name = models.CharField(_('name'), max_length=40)
+    name = models.CharField(_('name'), max_length=40, unique=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
-   
+
     def __unicode__(self):
         return "%s" % self.name
 
@@ -28,12 +30,22 @@ class Inventory(models.Model):
 
     def add_var(self, **kwargs):
         return self.vars.create(**kwargs)
+    
+    def delete_var(self, key):
+        return self.vars.delete(key=key)
+    
+    def get_var(self, key):
+        return self.vars.get(key=key)
 
     def get_vars(self):
         return self.vars.all()
+    
+    def update_vars(self, vars):
+        return self.vars.bulk_update(vars)
 
 class InventoryVar(BaseVar):
     inventory = models.ForeignKey(Inventory, related_name='vars') 
+    objects = InventoryVarManager()
     class Meta:
         unique_together = ('inventory', 'key')
 

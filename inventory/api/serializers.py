@@ -7,7 +7,8 @@ from inventory.models import (
     Host,
     HostVar
 )
-
+import logging
+logger = logging.getLogger('django')
 
 class BaseVarSerializer(serializers.ModelSerializer):
     def to_internal_value(self, data):
@@ -31,13 +32,13 @@ class HostSerializer(serializers.ModelSerializer):
         fields = ('name', 'vars', 'port')
         required_fields = ('name',)
 
-    def create(self, validated_data):
-        vars_data = validated_data.pop('vars')
-        host = Host.objects.create(**validated_data)
-        for var in vars_data:
-            host.add_var(**var)
-        host.save()
-        return host
+#    def create(self, validated_data):
+#        vars_data = validated_data.pop('vars')
+#        host = Host.objects.create(**validated_data)
+#        for var in vars_data:
+#            host.add_var(**var)
+#        host.save()
+#        return host
 
 
 class HostGroupVarSerializer(BaseVarSerializer):
@@ -54,16 +55,16 @@ class HostGroupSerializer(serializers.ModelSerializer):
         fields = ('name', 'vars', 'hosts')
         required_fields = ('name')
 
-    def create(self, validated_data):
-        vars_data = validated_data.pop('vars')
-        hosts_data = validated_data.pop('hosts')
-        host_group = HostGroup.objects.create(**validated_data)
-        for var in vars_data:
-            host_group.add_var(**var)
-        for host in hosts_data:
-            host_group.add_host(**host)
-        host_group.save()
-        return host_group
+#    def create(self, validated_data):
+#        vars_data = validated_data.pop('vars')
+#        hosts_data = validated_data.pop('hosts')
+#        host_group = HostGroup.objects.create(**validated_data)
+#        for var in vars_data:
+#            host_group.add_var(**var)
+#        for host in hosts_data:
+#            host_group.add_host(**host)
+#        host_group.save()
+#        return host_group
 
 
 class InventoryVarSerializer(BaseVarSerializer):
@@ -84,6 +85,7 @@ class InventorySerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         vars_data = validated_data.pop('vars', [])
         host_group_data = validated_data.pop('host_groups', [])
+        logger.debug("vars_data: %s" % vars_data)
         inventory = Inventory.objects.create(**validated_data)
         for var in vars_data: 
             if var is not None:
@@ -108,4 +110,29 @@ class InventorySerializer(serializers.ModelSerializer):
         inventory.save()
         return inventory
 
+    def update(self, *args, **validated_data):
+        logger.debug("validated_data: %s" % validated_data)
+        vars_data = validated_data.pop('vars', [])
+        host_group_data = validated_data.pop('host_groups', [])
+        inventory = Inventory.objects.get(name=validated_data['name'])
+        inventory.update_vars(vars_data)
+#        for host_group in host_group_data:
+#            if host_group is not None:
+#                host_group_vars = host_group.pop('vars', [])
+#                hosts = host_group.pop('hosts', [])
+#                hostgroup = inventory.add_host_group(**host_group)
+#                for var in host_group_vars: 
+#                    if var is not None:
+#                        hostgroup.add_var(**var)
+#                for host_data in hosts:
+#                    if host_data is not None:
+#                        vars = host_data.pop('vars',[])
+#                        host = hostgroup.add_host(**host_data)
+#                        for var in vars: 
+#                            if var is not None:
+#                                host.add_var(**var)
+#                        host.save()
+#                hostgroup.save()
+        inventory.save()
+        return inventory
 

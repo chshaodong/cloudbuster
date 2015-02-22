@@ -12,6 +12,9 @@ from inventory.models import (
     HostVar
 )
 
+class TestInventoryModelMethods(TestCase):
+    pass
+
 class TestCloudBusterInventoryAPI(APITestCase):
 
     def __init__(self, *args, **kwargs):
@@ -93,3 +96,27 @@ class TestCloudBusterInventoryAPI(APITestCase):
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(dict(response.data), data)
+
+    def test_04update_inventory_var(self):
+        data = {
+            "name": "dev",
+            "vars": [{"inventory_test_var": "test_value"}],
+            "host_groups": []
+        }       
+        url = r'/api/inventories/'
+        response = self.client.post(url, data, format='json')
+        
+        updated_data = {
+            "name": "dev",
+            "vars": [{"inventory_test_var": "test_value123"}],
+            "host_groups": []
+        }       
+        url = r'/api/inventories/1/'
+        response = self.client.patch(url, updated_data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        print "response.data: %s" % dict(response.data)
+        print "data: %s" % updated_data
+        self.assertEqual(dict(response.data), updated_data)
+        
+
+
