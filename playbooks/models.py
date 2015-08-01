@@ -2,7 +2,9 @@ from django.db import models
 from ansible_tasks.models import Task
 from inventory.models import Inventory
 
+
 class Play(models.Model):
+    """A set of one or more tasks """
     name = models.CharField(max_length=140)
     hosts = models.TextField(null=True, blank=True)
     tasks = models.ManyToManyField(Task, related_name='in_plays', through='TaskList')
@@ -15,6 +17,7 @@ class Play(models.Model):
     su_user = models.CharField(max_length=40, blank=True, null=True)
     su_pass = models.CharField(max_length=255, blank=True, null=True)    
     
+
 class TaskList(models.Model):
     number = models.PositiveIntegerField()
     play = models.ForeignKey(Play)
@@ -30,6 +33,4 @@ class Playbook(models.Model):
 class PlayList(models.Model):
    number = models.PositiveIntegerField()
    playbook = models.ForeignKey(Playbook)
-   play = models.ForeignKey(Play) 
-
-   
+   play = models.ForeignKey(Play)   

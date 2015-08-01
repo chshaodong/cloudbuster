@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+    <li><b>Tasks</b></li>
+    <li>
+      <ul>
+      {% for field in task.fields %}
+      <li>{{ field.name }}: {{ field }} </li>
+      {% endfor %}
+      </ul>
+    </li>
+</ul>
+{% endblock content %}

@@ -22,7 +22,7 @@ SECRET_KEY = '&f8$2dlkq8773yh#hk83=$1^uvd6yfe@0rl14%z=k@&nsgo=fj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
@@ -36,9 +36,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'taggit',
     'rest_framework',
     'ansible_modules',
     'mptt',
+    'aws_api_accounts',
     'inventory',
     'ansible_tasks',
     'playbooks',
@@ -64,8 +66,12 @@ WSGI_APPLICATION = 'cloudbuster.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'cloudbuster.db'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cloudbuster',
+	'USER': 'vagrant',
+        'PASSWORD': 'vagrant',
+	'HOST': 'localhost',
+	'PORT': '5432',
     }
 }
 
@@ -89,8 +95,9 @@ USE_TZ = True
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
-
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "htdocs")
+
 
 LOGGING = {
     'version': 1,

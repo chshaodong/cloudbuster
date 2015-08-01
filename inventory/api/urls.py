@@ -1,18 +1,20 @@
-from rest_framework import routers
+from django.conf.urls import patterns, include, url
+from rest_framework_nested import routers
 from inventory.api.views import (
     HostViewSet, 
-    HostVarViewSet,
     HostGroupViewSet,
-    HostGroupVarViewSet,
-    InventoryViewSet,
-    InventoryVarViewSet
+    InventoryViewSet
 )
 
 router = routers.SimpleRouter()
-router.register(r'hosts', HostViewSet)
-router.register(r'host_vars', HostVarViewSet)
-router.register(r'host_groups', HostGroupViewSet)
-router.register(r'host_groups_vars', HostGroupVarViewSet)
 router.register(r'inventories', InventoryViewSet)
-router.register(r'inventories_vars', InventoryVarViewSet)
-urlpatterns = router.urls
+inventory_router = routers.NestedSimpleRouter(router, r'inventories', lookup='inventory')
+inventory_router.register(r'host_groups', HostGroupViewSet)
+host_group_router = routers.NestedSimpleRouter(inventory_router, r'host_groups', lookup='host_group')
+host_group_router.register(r'hosts', HostViewSet)
+
+urlpatterns = patterns('',
+    url(r'^', include(router.urls)),
+    url(r'^', include(inventory_router.urls)),
+    url(r'^', include(host_group_router.urls)),
+)

@@ -1,3 +1,15 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
+from ansible_tasks.models import Task
 
-# Create your views here.
+
+class TaskListView(ListView):
+    queryset = Task.objects.all()
+    model = Task
+    context_object_name = 'tasks'
+
+
+class TaskDetailView(DetailView):
+    model = Task
+
+
